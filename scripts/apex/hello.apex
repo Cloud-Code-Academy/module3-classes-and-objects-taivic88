@@ -8,3 +8,14 @@
 string tempvar = 'Enter_your_name_here';
 System.debug('Hello World!');
 System.debug('My name is ' + tempvar);
+
+List<String> chars = tempvar.split('');
+System.debug(chars.size());
+System.debug(Math.random() * 10);
+System.debug(System.today());
+Datetime now = Date.today(); 
+now = now.addHours(1); 
+Date date1 = Date.newInstance(2023, 1, 1);
+Date date2 = Date.newInstance(2025, 12, 31);
+
+System.debug(Math.abs(Integer.valueOf(date1.year()) - Integer.valueOf(date2.year())));
